@@ -1,16 +1,22 @@
 import React from 'react';
 import './Button.css';
 
-// This is a functional component - just sent up a little differently as an arrow function!
+
+
 const Button = (props) => {
     
+    //Images
     let classList = '';
+    let types = ['primary', 'danger', 'warning', 'success', 'default']
 
-    if (props.type.includes('primary')) classList += ` button-${props.type} `
-    if (props.type.includes('secondary')) classList += ` button-${props.type} `
-    if (props.type.includes('tertiary')) classList += ` button-${props.type} `
+    if (types.includes(props.type)) classList += ` button-${props.type} `;
 
     if (props.large) classList += ` button-large `
+    if (props.deactivated) classList += ` button-deactivated `
+    if (props.outline) classList += ` button-outline `
+
+    //if (props.cart) 
+    //if (props.favorite) 
     
     return (
         <button onClick={props.onClick} className={classList}>
