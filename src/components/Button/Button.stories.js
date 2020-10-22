@@ -5,6 +5,9 @@ import Button from './Button';
 
 storiesOf('Button', module)
     .add('Primary', () => <Button label="Primary" type={'primary'} large/>)
-    .add('Secondary', () => <Button label="Secondary" type={'secondary'}/>)
-    .add('Tertiary', () => <Button label="Tertiary" type={'tertiary'}/>)
-    .add('Quaternary', () => <Button label="Quaternary" type={'primary'} onClick={() => console.log('helloworld')}/>)
+    .add('Danger', () =>  <Button label="Danger" type={'danger'}/>)
+    .add('Success', () =>  <Button label="Success" type={'success'}/>)
+    .add('Warning', () => <Button label="Warning" type={'warning'} />)
+    .add('Default', () => <Button label="Default" type={'default'} />)
+    .add('Large', () =>   <Button label="Large" type={'primary'} />)
+    .add('Function', () =><Button label="Functional" type={'primary'} onClick={() => console.log('helloworld')}/>)

@@ -11,6 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o storybook-build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
