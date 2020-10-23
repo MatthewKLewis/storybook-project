@@ -3,17 +3,23 @@ import './Inline.css';
 
 const Inline = (props) => {
     
-    let classList = '';
-    let types = ['email'];
-
-    if (types.includes(props.type)) classList += ` Inline-${props.type} `;
-
-    if (props.large) classList += ` Inline-large `;
+    if (props.large) {}
     
     return (
-        <div className={classList}>
-            <p>INLINE</p>
-        </div> 
+        <div className="Inline ">
+            <img />
+
+            <h2>Beats</h2>
+            <p># # # # #</p>
+            <p>Reviews Submit a Review</p>
+            
+            <hr></hr>
+            <p>$500 $250</p>
+            <p>Lorem</p>
+
+            <button>A</button>
+            <button>B</button>
+        </div>
     )
 }
 

@@ -17,7 +17,7 @@ const Button = (props) => {
     //if (props.favorite) 
     
     return (
-        <button onClick={props.onClick} className={classList}>
+        <button onClick={props.onClick} className={classList} disabled={props.deactivated}>
             {props.label}
         </button>
     )

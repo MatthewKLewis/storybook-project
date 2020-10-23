@@ -17,7 +17,6 @@ const Input = (props) => {
         element = 
             <div className="Input SelectInput">
 
-                <label for="menu">{props.label}</label>
                 <select name="menu" id="menu">
                     <option value="apples">Apples</option>
                     <option value="oranges">Oranges</option>
@@ -29,9 +28,8 @@ const Input = (props) => {
 
     if (props.type === 'number') {
         element = 
-            <div className="Input NumberInput">
-                <label for="number">{props.label}</label>
-                <input type="number" id="number" name="number" value={props.value} min={props.min} max={props.max}></input>
+            <div>
+                <input className="NumberInput" type="number" id="number" name="number" placeholder={props.value} min={props.min} max={props.max}></input>
             </div>
     }
 
@@ -39,13 +37,13 @@ const Input = (props) => {
         element = 
             <div className="Input ButtonInput">
                 <input type="text" id="button" name="button"></input>
-                <button>Click</button>
+                <button className='inline'>Click</button>
             </div>
     }
 
     if (props.type === 'check') {
         element = 
-            <div className="Input ButtonInput">
+            <div className="">
                 <input type="checkbox"></input>
             </div>
     }

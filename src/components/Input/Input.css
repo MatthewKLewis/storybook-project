@@ -8,39 +8,31 @@
 
 label {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
+    margin: 2px;
 }
 
 input {
     display: block;
-    border: 2px solid lightgray;
-    border-radius: 2px;
-    padding: 5px;
-    margin: 2px;
+    border: 2px solid #f6f7f8;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    width: 250px;
 }
 
 select {
     display: block;
-    border: 2px solid lightgray;
-    border-radius: 2px;
-    padding: 5px;
-    margin: 2px;
+    border: 2px solid #f6f7f8;
     background-color: #fff;
-}
-
-button {
-    display: inline;
-    background-color: blue;
-}
-
-.TextInput {
-    background-color: white;
-}
-
-.SelectInput {
-    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    width: 250px;
 }
 
 .NumberInput {
-    background-color: white;
+    width: 80px;
+    height: 30px;
+    background-color: #f6f7f8;
 }
