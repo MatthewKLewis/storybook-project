@@ -1,0 +1,25 @@
+#palette {
+    color: #33a0ff; color: #2e90e5; color: #eaf5ff;
+    color: #ff4858; color: #f53848; color: #ffecee;
+    color: #0ad00a; color: #07c107; color: #ebfae6;
+    color: #ffc600; color: #ebb600; color: #fff9e5;
+    color: #22262a; color: #13161a; color: #f6f7f8;
+}
+
+img {
+    background-color: #eaf5ff;
+    width: 180px;
+    height: 140px;
+    margin: 20px;
+}
+
+.Thumbnail {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 25px;
+    border: 4px solid #f6f7f8;
+    color: black;
+    width: 220px;
+    height: 320px;
+}
